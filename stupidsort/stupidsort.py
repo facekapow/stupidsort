@@ -1,7 +1,6 @@
-from typing import List
 from random import shuffle
 
-def is_sorted(arr: List[any]) -> bool:
+def is_sorted(arr: list) -> bool:
   if len(arr) < 2:
     return True
 
@@ -11,6 +10,6 @@ def is_sorted(arr: List[any]) -> bool:
 
   return True
 
-def stupid_sort(arr: List[any]) -> None:
+def stupid_sort(arr: list) -> None:
   while not is_sorted(arr):
     shuffle(arr)
